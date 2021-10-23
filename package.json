@@ -1,0 +1,28 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "prompts user for team members info and generates simple team profile webpage",
+  "main": "index.js",
+  "directories": {
+    "test": "__test__",
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-goldrath/team-profile-generator.git"
+  },
+  "author": "Jonathan Goldrath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-goldrath/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/j-goldrath/team-profile-generator#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.2.0"
+  }
+}
