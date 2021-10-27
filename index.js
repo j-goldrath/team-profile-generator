@@ -164,6 +164,8 @@ function askWhatNext() {
 // Generate team profile webpage file using employee objects generated while building team
 function generateTeamProfilePage(objArray) {
 
+let html = ''
+
     const pageTop = `<!DOCTYPE html>
 <html lang="en">
     
@@ -189,13 +191,9 @@ function generateTeamProfilePage(objArray) {
     
         `
 
-    fs.writeFile('./dist/team-profile-page.html', pageTop, err => {
-        if (err) {
-            console.error(err)
-            return
-        }
-        //file written successfully
-    });
+  
+
+html += pageTop
 
     objArray.forEach((employee) => {
 
@@ -228,14 +226,7 @@ function generateTeamProfilePage(objArray) {
     </div>
 
     `
-
-    fs.appendFile('./dist/team-profile-page.html', cardTemplate, err => {
-        if (err) {
-            console.error(err)
-            return
-        }
-        //file written successfully
-    });
+html += cardTemplate
 
     });
 
@@ -245,13 +236,14 @@ function generateTeamProfilePage(objArray) {
 
 </html>`
 
-    fs.appendFile('./dist/team-profile-page.html', pageBottom, err => {
-        if (err) {
-            console.error(err)
-            return
-        }
-        //file written successfully
-    });
+html += pageBottom
+fs.writeFile('./dist/team-profile-page.html', html, err => {
+    if (err) {
+        console.error(err)
+        return
+    }
+    //file written successfully
+});
 
 }
 
