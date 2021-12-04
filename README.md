@@ -4,34 +4,30 @@ This simple node.js app will prompt the user to answer a series of questions abo
 ## Table Of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Walkthrough](#walkthrough)
 - [Screen Shots](#screen-shots)
-- [Walkthroughs](#walkthroughs)
-- [License](#License)
-- [Contributing](#contributing)
 - [Tests](#tests)
-- [Questions](#questions)
 
 ## Installation
+To install the dependencies, execute the following command:
 ```
 npm i
 ```
+![Installation](https://github.com/j-goldrath/team-profile-generator/blob/main/assets/videos/team-profile-generator-demo-install.gif?raw=true)
 
 ## Usage
+To run the app, execute the following command:
 ```
-node index.js
+npm start
 ```
+![Usage](https://github.com/j-goldrath/team-profile-generator/blob/main/assets/videos/team-profile-generator-demo-usage.gif?raw=true)
 
 ## Screen-Shots
- 
-## Walkthroughs
-![](name-of-giphy.gif)
-## License
-
-## Contributing
+Here is an example of what the output should look like:
+ ![Team Profile Page](https://github.com/j-goldrath/team-profile-generator/blob/main/assets/images/team-profile-generator-demo-output.png?raw=true)
 
 ## Tests
 ```
 npm test
 ```
-
-## Questions
+![Tests](https://github.com/j-goldrath/team-profile-generator/blob/main/assets/videos/team-profile-generator-demo-jest.gif?raw=true)
