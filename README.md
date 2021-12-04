@@ -16,6 +16,7 @@ npm i
 ![Installation](https://github.com/j-goldrath/team-profile-generator/blob/main/assets/videos/team-profile-generator-demo-install.gif?raw=true)
 
 ## Tests
+To run the tests, execute the following command:
 ```
 npm test
 ```
