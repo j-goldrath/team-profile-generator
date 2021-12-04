@@ -147,7 +147,7 @@ function askWhatNext() {
             } else if (response.whatNext === 'Add an Intern') {
                 addIntern();
             } else {
-                console.log(newTeam);  // check contents of newTeam object array via console log
+                // console.log(newTeam);  // check contents of newTeam object array via console log
                 generateTeamProfilePage(newTeam);
             }
         })
